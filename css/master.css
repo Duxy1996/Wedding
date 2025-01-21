@@ -24,9 +24,15 @@
     transform: translateX(-50%);
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-}
+@font-face {
+    font-family: weddingDeco;
+    src: url(/fonts/GoldroomD.otf);
+ }
+
+ @font-face {
+    font-family: weddingDecoSubtitles;
+    src: url(/fonts/breamcatcherRg.otf);
+ }
 
 ul,
 li {
@@ -37,7 +43,7 @@ li {
     width: 100%;
     height: 700px;
     border: 1px solid #444;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.30)), url("../images/set1-couple-sitting-outdoors-1500x630.jpg") no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.30)), url("../images/wedding-pic-header.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -122,7 +128,7 @@ ul.navigation > li:first-child {
 
 .hero-section-slogan {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
@@ -131,7 +137,7 @@ ul.navigation > li:first-child {
 
 .hero-section-slogan > h2 {
     font-size: 100px;
-    font-family: 'Great Vibes', cursive;
+    font-family: weddingDeco;
     letter-spacing: 5px;
     font-weight: 100;
 }
@@ -174,7 +180,7 @@ ul.navigation > li:first-child {
 }
 
 .we-are-title > h2 {
-    font-family: 'Great Vibes', cursive;
+    font-family: weddingDeco;
     font-size: 50px;
     color: #333;
     font-weight: 100;
@@ -200,7 +206,7 @@ ul.navigation > li:first-child {
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    color: #CF1B15;
+    color: #3e7c1d;
     text-align: center;
     line-height: 40px;
     background-color: #FFF;
@@ -225,6 +231,7 @@ ul.navigation > li:first-child {
 
 .we-are-time > h2 {
     font-size: 40px;
+    font-family: weddingDecoSubtitles;
     color: #CF1B15;
     margin-bottom: 65px;
 }
@@ -237,7 +244,7 @@ ul.navigation > li:first-child {
     width: 25%;
     height: auto;
     float: left;
-    background-color: #CF1B15;
+    background-color: #3e7c1d;;
     color: #FFF;
     font-size: 35px;
     padding: 20px 0;
@@ -316,8 +323,8 @@ ul.navigation > li:first-child {
     position: relative;
     top: 75px;
     font-size: 60px;
-    font-family: "Great Vibes";
-    color: #FFF;
+    font-family: weddingDeco;
+    color: goldenrod;
     font-weight: 100;
 }
 
@@ -342,7 +349,7 @@ ul.navigation > li:first-child {
 
 .wedding-box > h2 {
     margin-bottom: 50px;
-    font-family: "Great Vibes";
+    font-family: weddingDeco;
     font-size: 48px;
     font-weight: 300;
 }
@@ -424,7 +431,7 @@ ul.navigation > li:first-child {
 
 .gb-title {
     font-size: 36px;
-    font-family: "Great Vibes";
+    font-family: weddingDeco;
     text-align: center;
     padding: 15px 0;
     font-weight: 100;
@@ -487,6 +494,7 @@ ul.navigation > li:first-child {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.30)), url("../images/house-croisette-promenade-in-cannes-bw.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
+
 }
 
 /* Hotel */
@@ -552,7 +560,7 @@ ul.navigation > li:first-child {
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    background-color: rgba(207, 27, 21, 0.70);
+    background-color: #3e7c1d;;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -75%) rotate(-35deg) scale(0.7);
@@ -703,3 +711,67 @@ ul.navigation > li:first-child {
         font-size: 2rem;
     }
 }
+
+/* Custom card */
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  .card:active {
+    transform: scale(0.98);
+  }
+
+  .card:active::after {
+    content: "Added !";
+    height: 3.125em;
+  }
+
+  .card-image {
+    width: 95%;
+    height: auto;
+    margin: 2%;
+  }
+
+  .image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
