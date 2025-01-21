@@ -206,7 +206,7 @@ ul.navigation > li:first-child {
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    color: #3e7c1d;
+    color: #CF1B15;
     text-align: center;
     line-height: 40px;
     background-color: #FFF;
@@ -315,7 +315,7 @@ ul.navigation > li:first-child {
 .who-we-are {
     width: 100%;
     padding: 200px 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/set1-young-couple-bw.jpg") no-repeat center center / cover fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/background-bg.jpg") no-repeat center center / cover fixed;
     text-align: center;
 }
 
@@ -775,3 +775,78 @@ ul.navigation > li:first-child {
     display: grid;
     place-items: center;
   }
+
+  /* Disclaimer */
+
+  .cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.content {
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/*span {
+    color: dimgray;
+}*/
+
+.pop-up {
+    width:80%;
+    /*height: 60%;*/
+    position: absolute;
+    margin:auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top:0;
+    z-index: 5000;
+}
+.black-overlay{
+	background-color: #000000c9;
+	width: 100%;
+	height:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+}
+
+.box-agree {
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 4%;
+    position: relative;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+}
+.box-agree .button:hover, .box-agree .hvr-bounce-to-right:before{
+	background: #212832
+}
+a:hover{
+    text-decoration: none;
+}
+.box-agree .button {
+    background-color: #a94442;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 5px 10px;
+}
+.disableClick:hover{
+	opacity: 0.5;
+	cursor: no-drop;
+}
+.disableClick{
+		cursor: no-drop;
+
+}
+.box-overlay{
+    display: none;
+}
