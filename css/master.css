@@ -311,20 +311,30 @@ ul.navigation > li:first-child {
     color: #9e9e9e;
 }
 
-.who-we-are {
-    width: 100%;
-    padding: 200px 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/background-bg.jpg") no-repeat center center / cover fixed;
-    text-align: center;
-}
-
-.who-we-are > h2 {
+.who-we-are-card {
     position: relative;
     top: 75px;
+    left: 25%;
     font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    width: 50%;
+}
+
+.who-we-are-card > h2 {
     font-family: weddingDeco;
     color: goldenrod;
     font-weight: 100;
+}
+
+.who-we-are {
+    width: 100%;
+    height: 30%;
+    padding: 250px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/background-bg.jpg") no-repeat center center / cover fixed;
+    text-align: center;
 }
 
 .who-we-are > p {
@@ -447,7 +457,7 @@ ul.navigation > li:first-child {
 /* Wedding Details */
 .wedding-details {
     width: 100%;
-    padding: 220px;
+    padding: 200px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent, rgba(0, 0, 0, 0.33)), url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center center fixed;
     background-size: cover;
 }
