@@ -74,6 +74,7 @@ li {
 
 .website-logo > picture > img {
     /*border: 1px solid #000;*/
+    padding-top: 10px;
     width: 270px;
 }
 
@@ -233,6 +234,16 @@ ul.navigation > li:first-child {
     font-family: weddingDecoSubtitles;
     color: #3e7c1d;
     margin-bottom: 65px;
+}
+
+.weedding-time-font {
+    font-size: 20px;
+    font-family: weddingDecoSubtitles;
+}
+
+.weedding-time-font-big {
+    font-size: 30px;
+    font-family: weddingDecoSubtitles;
 }
 
 .we-are-time-more {
