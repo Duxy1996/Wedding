@@ -25,12 +25,12 @@
 
 @font-face {
     font-family: weddingDeco;
-    src: url('https://github.com/Duxy1996/Wedding/raw/refs/heads/main/fonts/GoldroomD.otf') format('opentype');
+    src: url(../fonts/GoldroomD.otf);
  }
 
  @font-face {
     font-family: weddingDecoSubtitles;
-    src: url(/fonts/breamcatcherRg.otf);
+    src: url(../fonts/breamcatcherRg.otf);
  }
 
 ul,
