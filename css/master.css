@@ -1,4 +1,3 @@
-@import url("node_modules/normalize.css/normalize.css");
 
 *,
 *::before,
@@ -128,7 +127,7 @@ ul.navigation > li:first-child {
 
 .hero-section-slogan {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
@@ -195,8 +194,8 @@ ul.navigation > li:first-child {
 
 }
 
-.red-text {
-    color: #CF1B15;
+.green-text {
+    color: #3e7c1d;
 }
 
 .heart-line > i {
@@ -232,7 +231,7 @@ ul.navigation > li:first-child {
 .we-are-time > h2 {
     font-size: 40px;
     font-family: weddingDecoSubtitles;
-    color: #CF1B15;
+    color: #3e7c1d;
     margin-bottom: 65px;
 }
 
@@ -498,7 +497,6 @@ ul.navigation > li:first-child {
 }
 
 /* Hotel */
-
 .hotels > .wedding-box {
     width: 33.3333%;
 }
@@ -582,8 +580,8 @@ ul.navigation > li:first-child {
     color: #FFF;
     font-size: 40px;
 }
-/* Media Queries */
 
+/* Media Queries */
 @media only screen and (max-width: 1280px) {
     .hotels .wedding-box h2 {
         font-size: 2.2em;
@@ -626,6 +624,12 @@ ul.navigation > li:first-child {
 
     .hotels > .wedding-box {
         padding: 0 15px;
+    }
+
+    .hero-section-slogan
+    {
+        top: 50%;
+        left: 50%;
     }
 }
 
