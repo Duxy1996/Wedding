@@ -236,12 +236,12 @@ ul.navigation > li:first-child {
     margin-bottom: 65px;
 }
 
-.weedding-time-font {
+.wedding-time-font {
     font-size: 20px;
     font-family: weddingDecoSubtitles;
 }
 
-.weedding-time-font-big {
+.wedding-time-font-big {
     font-size: 30px;
     font-family: weddingDecoSubtitles;
 }
@@ -349,10 +349,11 @@ ul.navigation > li:first-child {
 }
 
 .who-we-are > p {
-    font-size: 15px;
+    font-size: 33px;
     color: #FFF;
     position: relative;
     top: 75px;
+    font-family: weddingDecoSubtitles;
 }
 
 /* GB */
@@ -397,13 +398,14 @@ ul.navigation > li:first-child {
 .wedding-box > figure > figcaption {
     margin: 20px 0;
     font-size: 32px;
-    font-family: Lato;
+    font-family: weddingDecoSubtitles;
     font-weight: 200;
 }
 
 .wedding-box > figure > p {
     color: #7d7d7d;
     font-size: 17px;
+    font-family: lato;
     line-height: 32px;
 }
 
@@ -493,6 +495,11 @@ ul.navigation > li:first-child {
 .our-option .wedding-box > p {
     margin: 15px 0;
     color: #8b8b8b;
+}
+
+.our-option .wedding-box .wedding-location > p
+{
+    font-size: 25px;
 }
 
 /* Acomodation */
@@ -657,7 +664,7 @@ ul.navigation > li:first-child {
         position: relative;
         top: 75px;
         left: 0%;
-        font-size: 60px;
+        font-size: 30px;
         background-color: rgba(255, 255, 255, 0.8);
         padding: 20px;
         height: 100%;
@@ -668,6 +675,13 @@ ul.navigation > li:first-child {
     .wedding-details
     {
         padding: 0px 0px 200px 0px;
+    }
+
+    .who-we-are > p {
+        font-size: 15px;
+        color: #FFF;
+        position: relative;
+        top: 75px;
     }
 }
 
