@@ -502,113 +502,6 @@ ul.navigation > li:first-child {
     font-size: 25px;
 }
 
-/* Acomodation */
-
-.acomodation::after {
-    content: "";
-    border: 20px solid transparent;
-    border-top-color: #FFF;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.who-we-are.acomodation {
-    color: red;
-    height: 250px;
-    padding: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.30)), url("../images/house-croisette-promenade-in-cannes-bw.jpg") no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-
-}
-
-/* Hotel */
-.hotels > .wedding-box {
-    width: 33.3333%;
-}
-
-.hotels .wedding-box > h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 20px 0;
-}
-
-.hotels .wedding-box > p {
-    font-size: 0.9rem;
-    margin: 20px 0;
-    color: #878787;
-}
-
-.hotels .wedding-box figcaption {
-    width: 100%;
-    height: 50px;
-    font-size: 1rem;
-}
-
-.hotels .wedding-box figcaption > p {
-    font-size: 1.1em;
-    font-family: 'Lato', sans-serif;
-    line-height: 30px;
-}
-
-.hotels-section-container {
-    max-width: 100%;
-}
-
-.hotels-section-container .wedding-box {
-    max-width: 100%;
-}
-
-.hotels .wedding-box .wedding-img-holder {
-    position: relative;
-}
-
-.hotels .wedding-box .wedding-img-holder::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.hotels .wedding-box .wedding-img-holder:hover::after {
-    opacity: 1;
-}
-
-.hotel-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #3e7c1d;;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -75%) rotate(-35deg) scale(0.7);
-    transition: 500ms;
-    transition-timing-function: cubic-bezier(0, 1.59, .5, 1.43);
-    opacity: 0;
-}
-
-.wedding-img-holder:hover > .hotel-circle {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1;
-}
-
-.hotel-circle > i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFF;
-    font-size: 40px;
-}
-
 /* Media Queries */
 @media only screen and (max-width: 1280px) {
     .hotels .wedding-box h2 {
@@ -682,6 +575,14 @@ ul.navigation > li:first-child {
         color: #FFF;
         position: relative;
         top: 75px;
+    }
+
+    .who-we-are {
+        width: 100%;
+        height: 30%;
+        padding: 250px 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/background-bg-phone.jpg") no-repeat center center / cover fixed;
+        text-align: center;
     }
 }
 
@@ -807,15 +708,7 @@ ul.navigation > li:first-child {
   .card:hover::after {
     bottom: 0;
     opacity: 1;
-  }
-
-  .card:active {
     transform: scale(0.98);
-  }
-
-  .card:active::after {
-    content: "Added !";
-    height: 3.125em;
   }
 
   .card-image {
