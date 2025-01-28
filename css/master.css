@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -26,12 +25,12 @@
 @font-face {
     font-family: weddingDeco;
     src: url(../fonts/doldroomD.otf);
- }
+}
 
- @font-face {
+@font-face {
     font-family: weddingDecoSubtitles;
     src: url(../fonts/breamcatcherRg.otf);
- }
+}
 
 ul,
 li {
@@ -46,7 +45,7 @@ li {
     background-size: cover;
 }
 
-#header > nav {
+#header>nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +53,7 @@ li {
     padding: 10px 20px;
 }
 
-#header > nav > ul.navigation {
+#header>nav>ul.navigation {
     float: right;
     transform: translateY(-2px);
 }
@@ -67,23 +66,23 @@ li {
     top: -15px;
 }
 
-.website-logo > img {
+.website-logo>img {
     display: block;
     width: 100%;
 }
 
-.website-logo > picture > img {
+.website-logo>picture>img {
     /*border: 1px solid #000;*/
     padding-top: 10px;
     width: 270px;
 }
 
-ul.navigation > li {
+ul.navigation>li {
     float: left;
     margin-left: 10px;
 }
 
-ul.navigation > li > a {
+ul.navigation>li>a {
     width: 100%;
     display: block;
     color: rgba(255, 255, 255, 0.5);
@@ -99,16 +98,16 @@ ul.navigation > li > a {
     transition: 300ms;
 }
 
-ul.navigation > li > a:hover {
+ul.navigation>li>a:hover {
     text-decoration: underline;
     opacity: 1;
 }
 
-ul.navigation > li:first-child {
+ul.navigation>li:first-child {
     margin-left: 0;
 }
 
-.navigation > li:first-child > a {
+.navigation>li:first-child>a {
     border: none;
 }
 
@@ -135,14 +134,14 @@ ul.navigation > li:first-child {
     text-align: center;
 }
 
-.hero-section-slogan > h2 {
+.hero-section-slogan>h2 {
     font-size: 100px;
     font-family: weddingDeco;
     letter-spacing: 5px;
     font-weight: 100;
 }
 
-.hero-section-slogan > p {
+.hero-section-slogan>p {
     margin-top: 10px;
     font-size: 12px;
 }
@@ -179,7 +178,7 @@ ul.navigation > li:first-child {
     width: 100%;
 }
 
-.we-are-title > h2 {
+.we-are-title>h2 {
     font-family: weddingDeco;
     font-size: 50px;
     color: #333;
@@ -199,7 +198,7 @@ ul.navigation > li:first-child {
     color: #3e7c1d;
 }
 
-.heart-line > i {
+.heart-line>i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -229,7 +228,7 @@ ul.navigation > li:first-child {
     width: 100%;
 }
 
-.we-are-time > h2 {
+.we-are-time>h2 {
     font-size: 40px;
     font-family: weddingDecoSubtitles;
     color: #3e7c1d;
@@ -254,7 +253,8 @@ ul.navigation > li:first-child {
     width: 25%;
     height: auto;
     float: left;
-    background-color: #3e7c1d;;
+    background-color: #3e7c1d;
+    ;
     color: #FFF;
     font-size: 35px;
     padding: 20px 0;
@@ -266,7 +266,7 @@ ul.navigation > li:first-child {
     border: none;
 }
 
-.we-are-time-box > span {
+.we-are-time-box>span {
     display: block;
     font-weight: 300;
 }
@@ -318,7 +318,7 @@ ul.navigation > li:first-child {
     text-align: justify;
 }
 
-.our-story-description-side > p {
+.our-story-description-side>p {
     color: #9e9e9e;
 }
 
@@ -334,13 +334,13 @@ ul.navigation > li:first-child {
     width: 50%;
 }
 
-.who-we-are-card > h2 {
+.who-we-are-card>h2 {
     font-family: weddingDeco;
     color: goldenrod;
     font-weight: 100;
 }
 
-.who-we-are-gold > div > p {
+.who-we-are-gold>div>p {
     font-family: weddingDecoSubtitles !important;
     color: goldenrod !important;
     font-size: 33px;
@@ -355,7 +355,7 @@ ul.navigation > li:first-child {
     text-align: center;
 }
 
-.who-we-are > p {
+.who-we-are>p {
     font-size: 33px;
     color: #FFF;
     position: relative;
@@ -375,7 +375,7 @@ ul.navigation > li:first-child {
     float: left;
 }
 
-.wedding-box > h2 {
+.wedding-box>h2 {
     margin-bottom: 50px;
     font-family: weddingDeco;
     font-size: 48px;
@@ -387,29 +387,29 @@ ul.navigation > li:first-child {
     position: relative;
 }
 
-.wedding-box > figure > .wedding-img-holder {
+.wedding-box>figure>.wedding-img-holder {
     width: 100%;
     overflow: hidden;
 }
 
-.wedding-img-holder > img {
+.wedding-img-holder>img {
     width: 100%;
     display: block;
     transition: 600ms;
 }
 
-.wedding-img-holder:hover > img {
+.wedding-img-holder:hover>img {
     transform: scale(1.1);
 }
 
-.wedding-box > figure > figcaption {
+.wedding-box>figure>figcaption {
     margin: 20px 0;
     font-size: 32px;
     font-family: weddingDecoSubtitles;
     font-weight: 200;
 }
 
-.wedding-box > figure > p {
+.wedding-box>figure>p {
     color: #7d7d7d;
     font-size: 17px;
     font-family: lato;
@@ -437,14 +437,14 @@ ul.navigation > li:first-child {
     padding: 30px 0;
 }
 
-.gb-images > figure {
+.gb-images>figure {
     width: 33.3333%;
     float: left;
     padding: 15px 25px;
 
 }
 
-.gb-images > figure > img {
+.gb-images>figure>img {
     width: 100%;
     display: block;
     border-radius: 50%;
@@ -466,7 +466,7 @@ ul.navigation > li:first-child {
     font-weight: 100;
 }
 
-.gb-images > figure > figcaption {
+.gb-images>figure>figcaption {
     width: 100%;
     padding: 40px 0;
     text-align: center;
@@ -482,13 +482,13 @@ ul.navigation > li:first-child {
     background-size: cover;
 }
 
-.our-option .wedding-box > figure > figcaption > p {
+.our-option .wedding-box>figure>figcaption>p {
     font-size: 15px;
     margin: 10px 0;
     color: #7d7d7d;
 }
 
-.our-option .wedding-box > h2 {
+.our-option .wedding-box>h2 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
@@ -499,13 +499,12 @@ ul.navigation > li:first-child {
     max-width: 1400px;
 }
 
-.our-option .wedding-box > p {
+.our-option .wedding-box>p {
     margin: 15px 0;
     color: #8b8b8b;
 }
 
-.our-option .wedding-box .wedding-location > p
-{
+.our-option .wedding-box .wedding-location>p {
     font-size: 25px;
 }
 
@@ -533,7 +532,7 @@ ul.navigation > li:first-child {
         display: block;
     }
 
-    #header > nav {
+    #header>nav {
         background-color: rgba(255, 255, 255, 0.6);
     }
 
@@ -542,20 +541,19 @@ ul.navigation > li:first-child {
         top: 1px;
     }
 
-    .gb-images > figure {
+    .gb-images>figure {
         width: 50%;
     }
 
-    .gb-images > figure:nth-child(3) {
+    .gb-images>figure:nth-child(3) {
         margin-left: 25%;
     }
 
-    .hotels > .wedding-box {
+    .hotels>.wedding-box {
         padding: 0 15px;
     }
 
-    .hero-section-slogan
-    {
+    .hero-section-slogan {
         top: 50%;
         left: 50%;
     }
@@ -572,12 +570,11 @@ ul.navigation > li:first-child {
         overflow-y: auto;
     }
 
-    .wedding-details
-    {
+    .wedding-details {
         padding: 0px 0px 200px 0px;
     }
 
-    .who-we-are > p {
+    .who-we-are>p {
         font-size: 15px;
         color: #FFF;
         position: relative;
@@ -594,7 +591,7 @@ ul.navigation > li:first-child {
 }
 
 @media only screen and (max-width: 865px) {
-    .hotels > .wedding-box {
+    .hotels>.wedding-box {
         padding: 0 5px;
     }
 }
@@ -611,7 +608,7 @@ ul.navigation > li:first-child {
         padding-bottom: 40px;
     }
 
-    .hotels > .wedding-box {
+    .hotels>.wedding-box {
         padding: 0 2px;
     }
 }
@@ -633,11 +630,11 @@ ul.navigation > li:first-child {
         text-align: center;
     }
 
-    .gb-images > figure {
+    .gb-images>figure {
         width: 100%;
     }
 
-    .gb-images > figure:nth-child(3) {
+    .gb-images>figure:nth-child(3) {
         margin-left: 0;
     }
 
@@ -671,7 +668,7 @@ ul.navigation > li:first-child {
         width: 100%;
     }
 
-    .gb-images > figure > figcaption {
+    .gb-images>figure>figcaption {
         font-size: 2rem;
     }
 }
@@ -682,7 +679,7 @@ ul.navigation > li:first-child {
     position: relative;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 120ms;
     display: flex;
@@ -691,9 +688,9 @@ ul.navigation > li:first-child {
     background: #fff;
     padding: 0.5em;
     padding-bottom: 3.4em;
-  }
+}
 
-  .card .title {
+.card .title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     position: absolute;
@@ -701,74 +698,72 @@ ul.navigation > li:first-child {
     bottom: 1.875em;
     font-weight: 400;
     color: #000;
-  }
+}
 
-  .card .price {
+.card .price {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 0.9em;
     position: absolute;
     left: 0.625em;
     bottom: 0.625em;
     color: #000;
-  }
+}
 
-  .card:hover::after {
+.card:hover::after {
     bottom: 0;
     opacity: 1;
     transform: scale(0.98);
-  }
+}
 
-  .card-image {
+.card-image {
     width: 95%;
     height: auto;
     margin: 2%;
-  }
+}
 
-  .image {
+.image {
     background: rgb(241, 241, 241);
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
-  }
+}
 
-  /* Disclaimer */
+/* Disclaimer */
 
-  .cover {
+.cover {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 1;
 }
+
 .content {
     width: 650px;
     margin: 0 auto;
     padding-top: 100px;
 }
 
-/*span {
-    color: dimgray;
-}*/
-
 .pop-up {
-    width:80%;
+    width: 80%;
     /*height: 60%;*/
     position: absolute;
-    margin:auto;
+    margin: auto;
     left: 0;
     bottom: 0;
     right: 0;
-    top:0;
+    top: 0;
     z-index: 5000;
 }
-.black-overlay{
-	background-color: #000000c9;
-	width: 100%;
-	height:100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 3000;
+
+.black-overlay {
+    background-color: #000000c9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
 }
 
 .box-agree {
@@ -779,30 +774,53 @@ ul.navigation > li:first-child {
     margin-top: 10%;
     padding: 4%;
     position: relative;
-    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
 }
-.box-agree .button:hover, .box-agree .hvr-bounce-to-right:before{
-	background: #212832
+
+.box-agree .button:hover, .box-agree .hvr-bounce-to-right:before {
+    background: #212832
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
+
 .box-agree .button {
     background-color: #a94442;
     margin-bottom: 10px;
     color: #fff;
     padding: 5px 10px;
 }
-.disableClick:hover{
-	opacity: 0.5;
-	cursor: no-drop;
+
+.disableClick:hover {
+    opacity: 0.5;
+    cursor: no-drop;
 }
-.disableClick{
-		cursor: no-drop;
+
+.disableClick {
+    cursor: no-drop;
 
 }
-.box-overlay{
+
+.box-overlay {
     display: none;
+}
+
+/* Custom telegram button */
+
+.telegram-button {
+    background-color: #0088cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 80px;
 }
