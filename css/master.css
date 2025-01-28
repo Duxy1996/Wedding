@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: weddingDeco;
-    src: url(../fonts/GoldroomD.otf);
+    src: url(../fonts/goldroomD.otf);
  }
 
  @font-face {
@@ -337,6 +337,13 @@ ul.navigation > li:first-child {
 .who-we-are-card > h2 {
     font-family: weddingDeco;
     color: goldenrod;
+    font-weight: 100;
+}
+
+.who-we-are-gold > div > p {
+    font-family: weddingDecoSubtitles !important;
+    color: goldenrod !important;
+    font-size: 33px;
     font-weight: 100;
 }
 

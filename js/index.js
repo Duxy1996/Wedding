@@ -30,6 +30,19 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+function openTelegramChat() {
+  var message = encodeURIComponent("For meal, I'm vegetarian");
+  var telegramUrl = 'https://t.me/duxy1996?start=' + message;
+
+  // Try to open the Telegram app first
+  window.location.href = 'tg://resolve?domain=duxy1996&start=' + message;
+
+  // Fallback to web version after a short delay
+  setTimeout(function() {
+      window.location.href = telegramUrl;
+  }, 500);
+}
+
 // Easter egg created by perplexity
 window.addEventListener('load', function () {
   let clickCount = 0;
