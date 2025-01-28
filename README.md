@@ -12,7 +12,7 @@ Serverles landing page for information about the wedding! I use ![](https://img.
 
 ## Fonts ❤️
 
-The fonts and colos are very important for traminting emotions and feelings. Green is the main color, it transmits pace, relax and joy. Thes green is very tipic from the Ireland grassfields. Also the Gold color for the tiltles and also the fonts **breamcatcherRg** and **breamcatcherRg**. which come from the Art Deco style.
+The fonts and colors are very important for transmitting emotions and feelings. Green is the main color; it conveys peace, relaxation, and joy. This shade of green is typical of Ireland's grassfields. Additionally, gold is used for the titles, complemented by the fonts "**BreamcatcherRg**" and "**GoldroomD.otf**," which draw inspiration from the Art Deco style.
 
 Link to [breamcatcher](https://www.dafont.com/es/breamcatcher.font)
 
