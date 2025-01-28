@@ -29,3 +29,27 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// Easter egg created by perplexity
+window.addEventListener('load', function () {
+  let clickCount = 0;
+  let time = Date.now();
+  const easterEggImage = document.getElementById('weddingBoyfriend');
+
+  easterEggImage.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default click behavior
+    clickCount++;
+
+    let fastTime = Date.now() - time;
+    time = Date.now();
+
+    if(fastTime < 100 )
+    {
+      alert("Romo, eres un cracko")
+    }
+
+    if (clickCount === 103) {
+      window.location.href = 'https://duxy1996.github.io/Predator';
+    }
+  });
+})
