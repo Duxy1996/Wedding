@@ -24,6 +24,12 @@ For deploying a basic version of the web use the following command.
   $ python3 -m http.server
 ```
 
+## Colors ❤️
+
+main color of the page is : #c9cbaf
+
+
+
 ## References ❤️
 
 * Wedding design: The Wedding website is designed by the [Kriesi](https://kriesi.at/themes/enfold-wedding/).
