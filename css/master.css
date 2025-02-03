@@ -195,7 +195,7 @@ ul.navigation>li:first-child {
 }
 
 .green-text {
-    color: #3e7c1d;
+    color: #c9cbaf;
 }
 
 .heart-line>i {
@@ -231,7 +231,7 @@ ul.navigation>li:first-child {
 .we-are-time>h2 {
     font-size: 40px;
     font-family: weddingDecoSubtitles;
-    color: #3e7c1d;
+    color: #c9cbaf;
     margin-bottom: 65px;
 }
 
@@ -253,8 +253,7 @@ ul.navigation>li:first-child {
     width: 25%;
     height: auto;
     float: left;
-    background-color: #3e7c1d;
-    ;
+    background-color: #c9cbaf;
     color: #FFF;
     font-size: 35px;
     padding: 20px 0;
@@ -416,70 +415,15 @@ ul.navigation>li:first-child {
     line-height: 32px;
 }
 
-/* ------------------------------------ */
-.grooms-and-brides {
-    width: 100%;
-    min-height: 150px;
-    background-color: #ccc;
-    float: left;
-    position: relative;
-}
-
-.gb {
-    width: 50%;
-    float: left;
-}
-
-
-.gb-images {
-    width: 100%;
-    float: left;
-    padding: 30px 0;
-}
-
-.gb-images>figure {
-    width: 33.3333%;
-    float: left;
-    padding: 15px 25px;
-
-}
-
-.gb-images>figure>img {
-    width: 100%;
-    display: block;
-    border-radius: 50%;
-}
-
-.grooms {
-    background-color: #bcbcbc;
-}
-
-.brides {
-    background: #e6d2d2;
-}
-
-.gb-title {
-    font-size: 36px;
-    font-family: weddingDeco;
-    text-align: center;
-    padding: 15px 0;
-    font-weight: 100;
-}
-
-.gb-images>figure>figcaption {
-    width: 100%;
-    padding: 40px 0;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 100;
-}
 
 /* Wedding Details */
+
 .wedding-details {
     width: 100%;
     padding: 200px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent, rgba(0, 0, 0, 0.33)), url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center center fixed;
     background-size: cover;
+    text-align: center;
 }
 
 .our-option .wedding-box>figure>figcaption>p {
@@ -520,6 +464,10 @@ ul.navigation>li:first-child {
 
     .hotels .wedding-box {
         padding: 0 30PX;
+    }
+
+    .who-we-are-card {
+        font-size: 40px;
     }
 }
 
@@ -814,4 +762,38 @@ a:hover {
     cursor: pointer;
     border-radius: 8px;
     margin-top: 80px;
+}
+
+/* DropDown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 0;
+    left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: weddingDecoSubtitles;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
