@@ -280,8 +280,6 @@ ul.navigation>li:first-child {
     width: 100%;
     height: auto;
     background-color: #dcdcdc;
-    position: relative;
-    float: left;
 }
 
 .our_story::before,
@@ -295,6 +293,8 @@ ul.navigation>li:first-child {
     transform: translate(-50%, 0);
     width: 0;
     height: 0;
+    position: relative;
+    float: left;
 }
 
 .our_story::after {
@@ -530,12 +530,12 @@ ul.navigation>li:first-child {
     }
 
     .who-we-are {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/background-bg-phone.jpg") no-repeat center center / cover;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), transparent, rgba(0, 0, 0, 0.400)), url("../images/background-bg-phone.jpg") no-repeat center center;
     }
 
     .wedding-details {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent, rgba(0, 0, 0, 0.33)), url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center center;
-}
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent, rgba(0, 0, 0, 0.33)), url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center center;
+    }
 
     .dropdown {
         position: relative;
