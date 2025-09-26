@@ -12,7 +12,9 @@ Serverles landing page for information about the wedding! I use ![](https://img.
 
 ## Fonts ❤️
 
-The fonts and colors are very important for transmitting emotions and feelings. Green is the main color; it conveys peace, relaxation, and joy. This shade of green is typical of Ireland's grassfields. Additionally, gold is used for the titles, complemented by the fonts "**BreamcatcherRg**", "**GoldroomD** and **Lato**," which draw inspiration from the Art Deco style.
+The fonts and colors are very important for transmitting emotions and feelings. Green is the main color; it conveys peace, relaxation, and joy. This shade of green is typical of Ireland's grassfields. Additionally, gold is used for the titles, complemented by the fonts "**BreamcatcherRg**", "**GoldroomD**" and "**Lato**" which draw inspiration from the Art Deco style.
+
+Art Deco is a decorative style from the 1920s–30s characterized by bold geometric shapes, rich colors, and luxurious materials.
 
 Link to [breamcatcher](https://www.dafont.com/es/breamcatcher.font)
 
@@ -26,7 +28,11 @@ For deploying a basic version of the web use the following command.
 
 ## Colors ❤️
 
-Main color of the page is : #c9cbaf
+Main color of the page is : #C9CBAF
+
+The color code #C9CBAF, known as Moon Mist, is a grayish tone with a subtle yellowish or greenish tint. In the RGB color system, it is composed of Red=201, Green=203, and Blue=175. This shade is classified as a tertiary color, resulting from a blend of primary and secondary colors.
+
+It transmits peace and stillness.
 
 
 
