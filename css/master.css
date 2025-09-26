@@ -6,21 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Start Of Header And Hero */
-
-[class*='triangle'] {
-    position: relative
-}
-
-.triangle-white::after {
-    content: "";
-    border: 20px solid transparent;
-    border-top-color: white;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/*  Import the fonts that will be used */
 
 @font-face {
     font-family: weddingDeco;
@@ -37,10 +23,16 @@ li {
     list-style-type: none;
 }
 
+/* Main colors*/
+.green-text {
+    color: #3a754e;
+}
+
+/*  Header styling */
+
 #header {
     width: 100%;
     height: 700px;
-    border: 1px solid #444;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.30)), url("../images/wedding-pic-header.jpg") no-repeat center center;
     background-size: cover;
 }
@@ -72,7 +64,6 @@ li {
 }
 
 .website-logo>picture>img {
-    /*border: 1px solid #000;*/
     padding-top: 10px;
     width: 270px;
 }
@@ -125,6 +116,10 @@ ul.navigation>li:first-child {
     cursor: pointer;
 }
 
+/* Finish Of Header styling*/
+/*---------------------------------------------------------------*/
+/*  Main front styling */
+
 .hero-section-slogan {
     position: absolute;
     top: 30%;
@@ -144,9 +139,10 @@ ul.navigation>li:first-child {
 .hero-section-slogan>p {
     margin-top: 10px;
     font-size: 12px;
+    font-family: Lato;
 }
 
-/* Finish Of Header And Hero */
+/* Finish Of Main front */
 /*---------------------------------------------------------------*/
 /* We Are Section */
 
@@ -185,36 +181,6 @@ ul.navigation>li:first-child {
     font-weight: 100;
 }
 
-.heart-line {
-    margin: 50px auto;
-    background-color: #c3c3c3;
-    height: 1px;
-    width: 450px;
-    position: relative;
-
-}
-
-.green-text {
-    color: #c9cbaf;
-}
-
-.heart-line>i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    color: #CF1B15;
-    text-align: center;
-    line-height: 40px;
-    background-color: #FFF;
-}
-
-.heart-line-story i {
-    background-color: #dcdcdc;
-}
-
 .we-are-description {
     color: #b0b0b0;
     max-width: 550px;
@@ -245,6 +211,11 @@ ul.navigation>li:first-child {
     font-family: weddingDecoSubtitles;
 }
 
+.wedding-time-only-font {
+    font-family: weddingDecoSubtitles;
+    letter-spacing: 0.07em;
+}
+
 .we-are-time-more {
     width: 100%;
 }
@@ -270,10 +241,39 @@ ul.navigation>li:first-child {
     font-weight: 300;
 }
 
-/* Finish We Are Section */
+/* Finish Of We Are Section */
+/*---------------------------------------------------------------*/
+/* Heart line style */
 
+.heart-line {
+    margin: 50px auto;
+    background-color: #c3c3c3;
+    height: 1px;
+    width: 450px;
+    position: relative;
+}
+
+.heart-line>i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    color: #CF1B15;
+    text-align: center;
+    line-height: 40px;
+    background-color: #FFF;
+}
+
+.heart-line-story i {
+    background-color: #dcdcdc;
+}
+
+
+
+/* Finish Heart line */
 /*------------------------------------------------------*/
-
 /* Start Our Story */
 
 .our_story {
@@ -307,7 +307,6 @@ ul.navigation>li:first-child {
     margin-bottom: 50px;
 }
 
-/*.our-story-description-side*/
 .our-story-description-side {
     width: 50%;
     padding: 0 50px;
@@ -362,7 +361,6 @@ ul.navigation>li:first-child {
     font-family: weddingDecoSubtitles;
 }
 
-/* GB */
 .wedding {
     width: 100%;
     margin: auto;
@@ -415,8 +413,10 @@ ul.navigation>li:first-child {
     line-height: 32px;
 }
 
-
+/* End Our Story */
+/*------------------------------------------------------*/
 /* Wedding Details */
+
 
 .wedding-details {
     width: 100%;
@@ -452,7 +452,110 @@ ul.navigation>li:first-child {
     font-size: 25px;
 }
 
-/* Media Queries */
+/* Custom card */
+/*------------------------------------------------------*/
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+}
+
+.card .title {
+    font-family: lato;
+    font-size: 16px;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+}
+
+.card:hover::after {
+    bottom: 0;
+    opacity: 1;
+    transform: scale(0.98);
+}
+
+.card-image {
+    width: 95%;
+    height: auto;
+    margin: 2%;
+}
+
+.image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* Custom telegram button */
+/*------------------------------------------------------*/
+
+.telegram-button {
+    background-color: #0088cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+/* DropDown menu */
+/*------------------------------------------------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.dropdown-content {
+    right: 0;
+    left: auto;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: weddingDecoSubtitles;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media Queries  for phones*/
+
 @media only screen and (max-width: 1280px) {
     .hotels .wedding-box h2 {
         font-size: 2.2em;
@@ -625,182 +728,4 @@ ul.navigation>li:first-child {
     .gb-images>figure>figcaption {
         font-size: 2rem;
     }
-}
-
-/* Custom card */
-
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 120ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    padding: 0.5em;
-    padding-bottom: 3.4em;
-}
-
-.card .title {
-    font-family: lato;
-    font-size: 16px;
-    position: absolute;
-    left: 0.625em;
-    bottom: 1.875em;
-    font-weight: 400;
-    color: #000;
-}
-
-.card:hover::after {
-    bottom: 0;
-    opacity: 1;
-    transform: scale(0.98);
-}
-
-.card-image {
-    width: 95%;
-    height: auto;
-    margin: 2%;
-}
-
-.image {
-    background: rgb(241, 241, 241);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
-
-/* Disclaimer */
-
-.cover {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-
-.content {
-    width: 650px;
-    margin: 0 auto;
-    padding-top: 100px;
-}
-
-.pop-up {
-    width: 80%;
-    /*height: 60%;*/
-    position: absolute;
-    margin: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    z-index: 5000;
-}
-
-.black-overlay {
-    background-color: #000000c9;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3000;
-}
-
-.box-agree {
-    background-color: whitesmoke;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    padding: 4%;
-    position: relative;
-    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
-}
-
-.box-agree .button:hover, .box-agree .hvr-bounce-to-right:before {
-    background: #212832
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.box-agree .button {
-    background-color: #a94442;
-    margin-bottom: 10px;
-    color: #fff;
-    padding: 5px 10px;
-}
-
-.disableClick:hover {
-    opacity: 0.5;
-    cursor: no-drop;
-}
-
-.disableClick {
-    cursor: no-drop;
-
-}
-
-.box-overlay {
-    display: none;
-}
-
-/* Custom telegram button */
-
-.telegram-button {
-    background-color: #0088cc;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-top: 80px;
-}
-
-/* DropDown menu */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    visibility: hidden;
-}
-
-.dropdown-content {
-    right: 0;
-    left: auto;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: weddingDecoSubtitles;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
