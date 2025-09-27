@@ -16,24 +16,46 @@ var countdownInterval = setInterval(function() {
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  if (distance > 0) {
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Output the result in an element with id="demo"
-  document.getElementById("weddingDays").innerHTML = days;
-  document.getElementById("weddingHours").innerHTML = hours;
-  document.getElementById("weddingMinutes").innerHTML = minutes;
-  document.getElementById("weddingSeconds").innerHTML = seconds;
+    // Output the result in an element with id="demo"
+    document.getElementById("weddingDays").innerHTML = days;
+    document.getElementById("weddingHours").innerHTML = hours;
+    document.getElementById("weddingMinutes").innerHTML = minutes;
+    document.getElementById("weddingSeconds").innerHTML = seconds;
+  }
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(countdownInterval);
-    document.getElementById("countdown-timer").innerHTML = `<div class="we-are-time-box wedding-time-font"><p>¡Empieza la boda!</p></div>`;
-    document.getElementById("countdown-timer").style.display = "flex";
-    document.getElementById("countdown-timer").style.justifyContent  = "center";
+    var countdownTimer = document.getElementById("countdown-timer");
+    var currentContent = document.getElementById("fade-container");
+
+    // Add fade-out class
+    if (currentContent) {
+      currentContent.classList.add("hide");
+      setTimeout(function() {
+        // After fade-out, replace content with fade-in message
+        countdownTimer.innerHTML = `<div class="we-are-time-box wedding-time-font fade-in">
+          <sapn>¡Empieza la boda!</sapn>
+          </br>
+          <sapn>¡Gracias!</sapn>
+        </div>`;
+        countdownTimer.style.display = "flex";
+        countdownTimer.style.justifyContent = "center";
+
+        // Fade in new message
+        setTimeout(function() {
+          var newMsg = countdownTimer.querySelector(".fade-in");
+          newMsg.classList.add("show");
+        }, 100);
+      }, 3000); // Match fade-out duration (0.7s)
+    }
   }
 
 }, 1000);
@@ -62,7 +84,7 @@ function openTelegramChat() {
 }
 
 /**
- * Easter egg hidden in the wedding website.
+ * Easter egg hidden in the wedding website. Testing fade in-out countdown
  *
  * When the user clicks on the image with ID `weddingBoyfriend`,
  * it tracks the number of clicks and the speed between them.
@@ -96,8 +118,10 @@ window.addEventListener('load', function () {
 
     // If two clicks happen very fast (< 100 ms apart),
     // trigger a funny alert message
+    // also enables a test date for the end of the countdown
     if (fastTime < FAST_CLICK_THRESHOLD) {
       alert("Romo, eres un cracko");
+      countDownDate = new Date().getTime() + 10000;
     }
 
     // If the image has been clicked exactly 103 times,
