@@ -53,6 +53,14 @@ var countdownInterval = setInterval(function() {
         setTimeout(function() {
           var newMsg = countdownTimer.querySelector(".fade-in");
           newMsg.classList.add("show");
+
+          // Show confetti!
+          confetti({
+            particleCount: 150,
+            spread: 120,
+            origin: { y: 0.6 }
+          });
+
         }, 100);
       }, 3000); // Match fade-out duration (0.7s)
     }
