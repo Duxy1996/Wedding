@@ -334,13 +334,13 @@ ul.navigation>li:first-child {
 
 .who-we-are-card>h2 {
     font-family: weddingDeco;
-    color: goldenrod;
+    color: #d7a31e;
     font-weight: 100;
 }
 
 .who-we-are-gold>div>p {
     font-family: weddingDecoSubtitles !important;
-    color: goldenrod !important;
+    color: #d7a31e !important;
     font-size: 33px;
     font-weight: 100;
 }
@@ -558,7 +558,7 @@ ul.navigation>li:first-child {
 
 .rotate-text {
     display: inline-block;      /* Needed so the transform applies properly */
-    transform: rotate(180deg);      /* Flip horizontally to create the opening question mark */
+    transform: rotate(180deg);  /* Flip horizontally to create the opening question mark */
 }
 
 /* Media Queries  for phones*/
