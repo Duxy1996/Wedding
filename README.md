@@ -30,11 +30,16 @@ For deploying a basic version of the web use the following command.
 
 Main color of the page is : #C9CBAF
 
-The color code #C9CBAF, known as Moon Mist, is a grayish tone with a subtle yellowish or greenish tint. In the RGB color system, it is composed of Red=201, Green=203, and Blue=175. This shade is classified as a tertiary color, resulting from a blend of primary and secondary colors.
+> The color code #C9CBAF, known as Moon Mist, is a grayish tone with a subtle yellowish or greenish tint. In the RGB color system, it is composed of Red=201, Green=203, and Blue=175. > This shade is classified as a tertiary color, resulting from a blend of primary and secondary colors.
+> It transmits peace and stillness.
 
-It transmits peace and stillness.
 
+> The color code #D7A31E, known as Golden Grass, is a warm golden-yellow tone with an earthy, slightly amber undertone. In the RGB color system, it is composed of Red=215, Green=163, > and Blue=30. This shade is considered a tertiary color, created by blending primary and secondary hues.
+> It conveys energy, vitality, and optimism, evoking warmth and a sense of creativity.
 
+>  The color code #3A754E, known as Killarney, is a deep green tone with a natural, slightly bluish undertone. In the RGB color system, it is composed of Red=58, Green=117, and Blue=78.
+>  This shade is classified as a tertiary color, formed by blending primary and secondary hues.
+>  It conveys balance, growth, and harmony, evoking the freshness of nature and a sense of renewal.
 
 ## References ❤️
 
