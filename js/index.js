@@ -8,7 +8,7 @@ const FAST_CLICK_THRESHOLD = 100; // milliseconds
 var countDownDate = new Date("Dec 27, 2025 12:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var countdownInterval = setInterval(function() {
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -30,9 +30,12 @@ var x = setInterval(function() {
 
   // If the count down is over, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    clearInterval(countdownInterval);
+    document.getElementById("countdown-timer").innerHTML = `<div class="we-are-time-box wedding-time-font"><p>¡Empieza la boda!</p></div>`;
+    document.getElementById("countdown-timer").style.display = "flex";
+    document.getElementById("countdown-timer").style.justifyContent  = "center";
   }
+
 }, 1000);
 
 /**
